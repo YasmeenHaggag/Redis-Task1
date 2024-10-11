@@ -1,0 +1,20 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  datasource:
+   url: jdbc:postgresql://localhost:5432/TaskDB
+   driver-class-name: org.postgresql.Driver
+   username: postgres
+   password: yasmin12
+  jpa:
+    show-sql: true
+    properties :
+      hibernate :
+        format_sql : true
+        default_schema : taskdb
+
+
+server:
+  port: 8081
+
